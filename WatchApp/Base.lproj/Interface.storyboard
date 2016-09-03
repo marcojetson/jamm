@@ -92,12 +92,7 @@
             <objects>
                 <controller identifier="MapController" id="k03-N0-KhE">
                     <items>
-                        <map height="100" alignment="left" id="goq-yY-e4Y"/>
-                        <button width="1" alignment="left" title="Confirm" id="BXt-lD-GyE">
-                            <connections>
-                                <segue destination="AG6-eo-bIY" kind="push" id="HfJ-93-U4I"/>
-                            </connections>
-                        </button>
+                        <group width="1" height="1" alignment="left" backgroundImage="map_mock" contentMode="scaleAspectFit" id="0Xx-rK-bev"/>
                     </items>
                 </controller>
             </objects>
@@ -129,6 +124,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="UUR-uR-6Ck"/>
-        <segue reference="Cz5-Bv-raI"/>
     </inferredMetricsTieBreakers>
 </document>
