@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -51,15 +51,15 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="15" id="d6K-YK-fwL">
                             <items>
-                                <imageView alignment="left" image="where_heading" id="wsl-ET-yb7"/>
+                                <imageView width="136" height="40.5" alignment="left" image="where_heading" id="wsl-ET-yb7"/>
                                 <group width="1" alignment="left" spacing="5" id="xjX-Cz-tsj">
                                     <items>
-                                        <button width="0.40000000000000002" height="60" alignment="center" backgroundImage="here" id="EUv-ca-5Mw">
+                                        <button width="60" height="60" alignment="center" backgroundImage="here" id="EUv-ca-5Mw">
                                             <connections>
                                                 <segue destination="AG6-eo-bIY" kind="push" id="Cz5-Bv-raI"/>
                                             </connections>
                                         </button>
-                                        <button width="0.40000000000000002" height="60" alignment="center" backgroundImage="map" id="JPF-mD-QKA">
+                                        <button width="60" height="60" alignment="center" backgroundImage="map" id="JPF-mD-QKA">
                                             <connections>
                                                 <segue destination="k03-N0-KhE" kind="push" id="Zle-Zx-phg"/>
                                             </connections>

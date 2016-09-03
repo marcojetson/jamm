@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "what_jamming_for.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "jammin_for.png",
       "scale" : "2x"
     },
     {
