@@ -29,9 +29,10 @@ class ViewController: UIViewController {
     @IBAction func receiveInvitationTouch(sender: UIButton) {
         let notification = UILocalNotification()
         notification.fireDate = NSDate(timeIntervalSinceNow: 5)
-        notification.alertBody = "Marco's hungry! He is into bikes and vegan, same as you. Are you up to?"
+        notification.alertBody = "Marco’s hungry! You JAMMed with bikes. Are you up to it?"
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.category = "invitationCategory"
+        
 
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
     @IBAction func receiveConfirmationErrorTouch(sender: UIButton) {
         let notification = UILocalNotification()
         notification.fireDate = NSDate(timeIntervalSinceNow: 5)
-        notification.alertBody = "You get alone sometimes, try reading a book!"
+        notification.alertBody = "Sometimes you need alone time, enjoy!"
         notification.soundName = UILocalNotificationDefaultSoundName
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
