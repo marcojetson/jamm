@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -12,7 +12,7 @@
                     <items>
                         <group width="1" alignment="left" contentMode="scaleAspectFit" id="Rec-f8-yZa">
                             <items>
-                                <imageView alignment="left" image="what_heading" id="mLp-UN-68u"/>
+                                <imageView alignment="center" image="what_heading" contentMode="scaleAspectFit" id="mLp-UN-68u"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" layout="vertical" spacing="10" id="Ejg-u7-Gvl">
@@ -51,7 +51,7 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="15" id="d6K-YK-fwL">
                             <items>
-                                <imageView width="136" height="40.5" alignment="left" image="where_heading" id="wsl-ET-yb7"/>
+                                <imageView width="136" height="40.5" alignment="center" image="where_heading" contentMode="scaleAspectFit" id="wsl-ET-yb7"/>
                                 <group width="1" alignment="left" spacing="5" id="xjX-Cz-tsj">
                                     <items>
                                         <button width="60" height="60" alignment="center" backgroundImage="here" id="EUv-ca-5Mw">
@@ -76,10 +76,13 @@
         <!--SendOutController-->
         <scene sceneID="bWB-Of-aBF">
             <objects>
-                <controller identifier="SendOutController" id="AG6-eo-bIY">
+                <controller identifier="SendOutController" id="AG6-eo-bIY" customClass="SendOutController" customModule="WatchApp_Extension">
                     <items>
-                        <group width="1" height="1" alignment="left" backgroundImage="sendout_mock" contentMode="scaleAspectFit" id="LxP-yL-5ug"/>
+                        <group width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="LxP-yL-5ug"/>
                     </items>
+                    <connections>
+                        <outlet property="progress" destination="LxP-yL-5ug" id="3Mf-Fr-wNN"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="827" y="278"/>

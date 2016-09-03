@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDC3A9F91D7B49270033BBF1 /* SendOutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3A9F71D7B49180033BBF1 /* SendOutController.swift */; };
 		FDEE0A4D1D7AFA3D00409669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE0A4C1D7AFA3D00409669 /* AppDelegate.swift */; };
 		FDEE0A4F1D7AFA3D00409669 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE0A4E1D7AFA3D00409669 /* ViewController.swift */; };
 		FDEE0A521D7AFA3D00409669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDEE0A501D7AFA3D00409669 /* Main.storyboard */; };
@@ -81,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FDC3A9F71D7B49180033BBF1 /* SendOutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendOutController.swift; sourceTree = "<group>"; };
 		FDEE0A491D7AFA3D00409669 /* JammApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JammApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEE0A4C1D7AFA3D00409669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEE0A4E1D7AFA3D00409669 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				FDEE0A7E1D7AFA5C00409669 /* Interface.storyboard */,
 				FDEE0A831D7AFA5C00409669 /* Info.plist */,
 				FDEF2E991D7B0FE300C92AC3 /* Assets.xcassets */,
+				FDC3A9F71D7B49180033BBF1 /* SendOutController.swift */,
 			);
 			path = WatchApp;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				TargetAttributes = {
 					FDEE0A481D7AFA3D00409669 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6GJCF544G3;
 					};
 					FDEE0A5C1D7AFA3D00409669 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -340,11 +344,11 @@
 					};
 					FDEE0A7B1D7AFA5C00409669 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6JESCGS74U;
+						DevelopmentTeam = 6GJCF544G3;
 					};
 					FDEE0A871D7AFA5C00409669 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6JESCGS74U;
+						DevelopmentTeam = 6GJCF544G3;
 					};
 				};
 			};
@@ -444,6 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC3A9F91D7B49270033BBF1 /* SendOutController.swift in Sources */,
 				FDEE0A941D7AFA5C00409669 /* NotificationController.swift in Sources */,
 				FDEE0A921D7AFA5C00409669 /* ExtensionDelegate.swift in Sources */,
 				FDEE0A901D7AFA5C00409669 /* InterfaceController.swift in Sources */,
