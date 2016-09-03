@@ -13,7 +13,7 @@ import Foundation
 class SendOutController: WKInterfaceController {
     @IBOutlet var progress: WKInterfaceGroup!
     
-    var step = 0
+    var step = 1
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -33,7 +33,7 @@ class SendOutController: WKInterfaceController {
     }
     
     func update() {
-        if (step <= 2) {
+        if (step <= 3) {
             progress.setBackgroundImageNamed("progress" + String(step))
             step += 1
         }

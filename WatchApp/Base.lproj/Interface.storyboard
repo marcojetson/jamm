@@ -78,7 +78,7 @@
             <objects>
                 <controller identifier="SendOutController" id="AG6-eo-bIY" customClass="SendOutController" customModule="WatchApp_Extension">
                     <items>
-                        <group width="1" height="1" alignment="left" contentMode="scaleAspectFit" id="LxP-yL-5ug"/>
+                        <group width="1" height="1" alignment="left" backgroundImage="progress0" contentMode="scaleAspectFit" id="LxP-yL-5ug"/>
                     </items>
                     <connections>
                         <outlet property="progress" destination="LxP-yL-5ug" id="3Mf-Fr-wNN"/>
