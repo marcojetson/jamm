@@ -16,10 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        let acceptAction = UIMutableUserNotificationAction()
+        acceptAction.identifier = "accept"
+        acceptAction.title = "Sure!"
+        acceptAction.activationMode = UIUserNotificationActivationMode.Background
+        acceptAction.destructive = false
+        acceptAction.authenticationRequired = false
+        
+        let dismissAction = UIMutableUserNotificationAction()
+        dismissAction.identifier = "dismiss"
+        dismissAction.title = "Nope."
+        dismissAction.activationMode = UIUserNotificationActivationMode.Background
+        dismissAction.destructive = false
+        dismissAction.authenticationRequired = false
+        
+        let invitationCategory = UIMutableUserNotificationCategory()
+        invitationCategory.identifier = "invitationCategory"
+        invitationCategory.setActions([acceptAction, dismissAction], forContext: UIUserNotificationActionContext.Default)
+        invitationCategory.setActions([acceptAction, dismissAction], forContext: UIUserNotificationActionContext.Minimal)
+        
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: Set<UIUserNotificationCategory>(arrayLiteral: invitationCategory))
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
-
+        
         return true
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

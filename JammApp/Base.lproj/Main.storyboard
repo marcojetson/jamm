@@ -18,16 +18,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr7-4S-yph">
-                                <rect key="frame" x="171" y="165" width="120" height="30"/>
+                                <rect key="frame" x="240" y="155" width="120" height="30"/>
                                 <state key="normal" title="Receive invitation"/>
                                 <connections>
                                     <action selector="receiveInvitationTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcq-Uf-ob6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-zB-AZH">
+                                <rect key="frame" x="198" y="250" width="204" height="30"/>
+                                <state key="normal" title="Receive confirmation success"/>
+                                <connections>
+                                    <action selector="receiveConfirmationSuccessTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVW-VZ-wJR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-ig-TVm">
+                                <rect key="frame" x="209" y="341" width="182" height="30"/>
+                                <state key="normal" title="Receive confirmation error"/>
+                                <connections>
+                                    <action selector="receiveConfirmationErrorTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lua-m1-nEe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="receiveConfirmationError" destination="e6w-ig-TVm" id="QEe-Qx-zTq"/>
+                        <outlet property="receiveConfirmationSuccess" destination="cdp-zB-AZH" id="loQ-9M-XzD"/>
                         <outlet property="receiveInvitation" destination="gr7-4S-yph" id="PfV-oj-3VY"/>
                     </connections>
                 </viewController>
